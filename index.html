@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kestrun – Hybrid PowerShell & .NET Web Framework</title>
+
+    <!-- 🔹 Primary Meta Tags -->
+    <meta name="title" content="Kestrun – Hybrid PowerShell & .NET Web Framework">
+    <meta name="description"
+        content="Kestrun is a modern hybrid web framework powered by ASP.NET Core, PowerShell, and C#. Build secure, extensible, multi-language web apps with ease.">
+    <meta name="keywords"
+        content="Kestrun, PowerShell web framework, .NET web framework, ASP.NET Core, Kestrel, hybrid framework, Razor Pages, C# scripting, multi-language routes, open source web server">
+    <meta name="author" content="Kestrun Project">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.kestrun.dev/">
+    <meta property="og:site_name" content="Kestrun">
+    <meta property="og:title" content="Kestrun – Hybrid PowerShell & .NET Web Framework">
+    <meta property="og:description"
+        content="A modern hybrid web framework for PowerShell & .NET. Build extensible, secure, and cross-platform apps with ease.">
+    <meta property="og:image" content="https://www.kestrun.dev/assets/kestrun_abstract_transparent.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.kestrun.dev/">
+    <meta name="twitter:title" content="Kestrun – Hybrid PowerShell & .NET Web Framework">
+    <meta name="twitter:description" content="A modern hybrid web framework for PowerShell & .NET.">
+    <meta name="twitter:image" content="https://www.kestrun.dev/assets/kestrun_abstract_transparent.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/kestrun_favicon.svg" type="image/svg+xml" />
+
+    <!-- Theme color (nice on Android/iOS) -->
+    <meta name="theme-color" content="#1f6feb">
+
+    <!-- Preload the wordmark for faster LCP -->
+    <link rel="preload" as="image" href="/assets/kestrun-wordmark-light.svg"
+        imagesrcset="/assets/kestrun-wordmark-light.svg">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+            background: #0d1117;
+            color: #c9d1d9;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, #1f6feb, #238636);
+            color: white;
+            position: relative;
+            padding: 3rem 1rem;
+            /* add comfortable space */
+        }
+
+        header img.logo {
+            position: absolute;
+            top: 1rem;
+            /* <-- add this */
+            right: 1rem;
+            max-width: 80px;
+            height: auto;
+            pointer-events: none;
+            /* purely decorative */
+        }
+
+        header img.wordmark {
+            max-width: 640px;
+            height: auto;
+            margin-bottom: 1rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .buttons {
+            margin: 2rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        a.primary {
+            background: #238636;
+            color: white;
+        }
+
+        a.primary:hover {
+            background: #2ea043;
+        }
+
+        a.secondary {
+            background: #161b22;
+            border: 1px solid #30363d;
+            color: #c9d1d9;
+        }
+
+        a.secondary:hover {
+            background: #21262d;
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #8b949e;
+            border-top: 1px solid #30363d;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Logo (top-right) -->
+        <img src="/assets/kestrun_abstract_transparent.png" alt="Kestrun logo" class="logo" />
+
+        <!-- Wordmark (centered) -->
+        <img src="/assets/kestrun-wordmark-light.svg" alt="Kestrun" class="wordmark" />
+
+
+        <p>A modern hybrid web framework for PowerShell & .NET</p>
+    </header>
+    <main>
+        <h2>What is Kestrun?</h2>
+        <p>
+            Kestrun is a hybrid web framework built on <strong>ASP.NET Core (Kestrel)</strong>,
+            extending it with <strong>PowerShell</strong>, <strong>C#</strong>, and multi-language scripting support.
+            It brings the flexibility of scripting and the performance of .NET into one ecosystem.
+        </p>
+
+        <h2>Features</h2>
+        <ul>
+            <li>⚡ Multi-language routes (PowerShell, C#, F#, VB.NET, JS, Python, …)</li>
+            <li>🔒 Built-in authentication & certificate management</li>
+            <li>📄 Razor pages backed by PowerShell scripts</li>
+            <li>📊 Logging, scheduling, caching, compression</li>
+            <li>🛠 Designed for extensibility & cross-platform use</li>
+        </ul>
+
+        <div class="buttons">
+            <a href="https://docs.kestrun.dev" class="button primary">📚 Read the Docs</a>
+            <a href="https://github.com/Kestrun/Kestrun" class="button secondary">⭐ GitHub Repo</a>
+            <a href="https://blog.kestrun.dev" class="button secondary">📝 Blog</a>
+            <a href="https://coverage.kestrun.dev" class="button secondary">✅ Test Coverage</a>
+        </div>
+    </main>
+    <footer>
+        © 2025 Kestrun Project · MIT Licensed · <a href="https://github.com/Kestrun/Kestrun"
+            style="color:inherit;">GitHub</a>
+    </footer>
+</body>
+
+</html>

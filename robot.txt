@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.kestrun.dev/sitemap.xml
+Sitemap: https://docs.kestrun.dev/sitemap.xml
+Sitemap: https://blog.kestrun.dev/sitemap.xml
+Sitemap: https://coverage.kestrun.dev/sitemap.xml
